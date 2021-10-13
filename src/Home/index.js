@@ -79,7 +79,8 @@ export default function PhysicianView(props) {
           title: "Book vaccination to win 200 dollar",
           description:
             "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-          image: "https://source.unsplash.com/random",
+          image:
+            "https://images.unsplash.com/photo-1632715413137-17b569a15318?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNDE1ODIyNA&ixlib=rb-1.2.1&q=80&w=1600",
           imageText: "main image description",
           linkText: "Continue reading…",
         }}
