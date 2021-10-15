@@ -32,26 +32,62 @@ function Copyright() {
 }
 
 const columns = [
-  { field: "id", headerName: "ID", width: 150 },
   {
     field: "firstName",
     headerName: "First name",
-    width: 150,
+    width: 190,
     editable: true,
   },
   {
     field: "lastName",
     headerName: "Last name",
-    width: 150,
+    width: 190,
     editable: true,
   },
   {
-    field: "age",
-    headerName: "Age",
+    field: "email",
+    headerName: "Email",
     type: "number",
-    width: 110,
+    width: 190,
     editable: true,
   },
+  {
+    field: "phoneNumber",
+    headerName: "Phone",
+    type: "number",
+    width: 200,
+    editable: true,
+  },
+  {
+    field: "prefferedDate",
+    headerName: "Preffered Date",
+    type: "number",
+    width: 200,
+    editable: true,
+  },
+  {
+    field: "prefferedLocation",
+    headerName: "Preffered Location",
+    type: "number",
+    width: 200,
+    editable: true,
+  },
+  {
+    field: "prefferedVaccine",
+    headerName: "Preffered vaccine",
+    type: "number",
+    width: 200,
+    editable: true,
+  },
+  {
+    field: "contactConsent",
+    headerName: "Contact consent",
+    type: "number",
+    width: 200,
+    editable: true,
+  },
+
+  /** 
   {
     field: "fullName",
     headerName: "Full name",
@@ -63,18 +99,109 @@ const columns = [
         params.getValue(params.id, "lastName") || ""
       }`,
   },
+  */
 ];
 
 const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
-  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-  { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
+  {
+    id: 1,
+    lastName: "Snow",
+    firstName: "Jon",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 2,
+    lastName: "Lannister",
+    firstName: "Cersei",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 3,
+    lastName: "Lannister",
+    firstName: "Jaime",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 4,
+    lastName: "Stark",
+    firstName: "Arya",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 5,
+    lastName: "Targaryen",
+    firstName: "Daenerys",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 6,
+    lastName: "Melisandre",
+    firstName: "Lee",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 7,
+    lastName: "Clifford",
+    firstName: "Ferrara",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 8,
+    lastName: "Frances",
+    firstName: "Rossini",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
+  {
+    id: 9,
+    lastName: "Roxie",
+    firstName: "Harvey",
+    email: "johndoe@gmail.com",
+    phoneNumber: "324-456-2345",
+    prefferedDate: "Oct 15 2021",
+    prefferedLocation: "Nepean SportSplex",
+    prefferedVaccine: "Pfizer",
+    contactConsent: "Yes",
+  },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -83,7 +210,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(700 + theme.spacing(2) * 2)]: {
-      width: 1000,
+      width: 1700,
       marginLeft: "auto",
       marginRight: "auto",
     },
@@ -123,8 +250,8 @@ const steps = ["Eligibility", "Basic Info", "Health Info", "Review"];
 export default function Appointments() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
-  const [appointmentData, setAppointmentData] = React.useState({
-    patientInfo: {
+  const [appointments, setAppointments] = React.useState([
+    {
       firstName: "",
       lastName: "",
       email: "",
@@ -136,59 +263,7 @@ export default function Appointments() {
       },
       contactConsent: false,
     },
-
-    healthInfoQuestions: [
-      {
-        question:
-          "Are you pregnant, breastfeeding or planning to become pregant?",
-        answer: "",
-        example: "",
-      },
-      {
-        question: "Do you have chronic medical condition?",
-        answer: "",
-        example: "e.g. high or low blood pressure, diabites, sezuire, etc.",
-      },
-      {
-        question:
-          "Do you have weekened immune system due to a medical condition?",
-        answer: "",
-        example: "",
-      },
-      {
-        question:
-          "Do you live with someone who has a chronic medical condition?",
-        answer: "",
-        example: "",
-      },
-    ],
-
-    eligibleQuestions: [
-      {
-        question: "Are you a Healthcare Worker or an Essential Caregiver?",
-        answer: "",
-        example:
-          "e.g. doctor, nurses, paramedic, physician, pharmacist, hospital workers, etc.",
-      },
-      {
-        question: "Are you a Frontline or Essential Worker?",
-        answer: "",
-        example:
-          "e.g. police, fire fighter, food supply worker, first responder, officers, etc.",
-      },
-      {
-        question: "Are you above 18 years old?",
-        answer: "",
-        example:
-          "note: to be eligible, your 18th birthday must be before vaccination day",
-      },
-      {
-        question: "Is this your 1st dose?",
-        answer: "",
-        example: "note: choose 'No' if this is not your first time",
-      },
-    ],
-  });
+  ]);
 
   const child = useRef();
 

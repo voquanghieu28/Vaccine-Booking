@@ -206,7 +206,7 @@ export default function Patients() {
                   Appointment
                   ID
                   id="outlined-required"
-                  label="Appointment ID"
+                  label="Patient ID"
                   variant="outlined"
                   size="small"
                   fullWidth

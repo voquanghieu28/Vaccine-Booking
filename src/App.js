@@ -214,7 +214,7 @@ export default function App() {
         }}
       >
         <TabPanel value={value} index={6} style={{ minHeight: "100vh" }}>
-          <h1>To be implemented</h1>
+          <h1>Page under deployment</h1>
         </TabPanel>
       </div>
     </div>
