@@ -209,7 +209,9 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
+    maxWidth: 1500,
     [theme.breakpoints.up(700 + theme.spacing(2) * 2)]: {
+      maxWidth: 1500,
       width: "auto",
       marginLeft: "auto",
       marginRight: "auto",
@@ -232,7 +234,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(3),
     padding: theme.spacing(2),
     minHeight: 200,
-    [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {
+    [theme.breakpoints.up(610 + theme.spacing(3) * 2)]: {
       marginTop: theme.spacing(1),
       marginBottom: theme.spacing(6),
       padding: theme.spacing(3),
@@ -276,7 +278,7 @@ export default function Appointments() {
         >
           <div style={{ margin: 20 }}>
             <Grid container spacing={1}>
-              <Grid item xs={9} md={9} lg={9}>
+              <Grid item xs={11} md={11} lg={11}>
                 <TextField
                   Appointment
                   ID
@@ -292,7 +294,7 @@ export default function Appointments() {
                   }}
                 />
               </Grid>
-              <Grid item xs={3} md={3} lg={3}>
+              <Grid item xs={1} md={1} lg={1}>
                 <Button
                   variant="contained"
                   color="primary"

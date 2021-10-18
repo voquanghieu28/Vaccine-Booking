@@ -230,7 +230,7 @@ export default function Patients() {
         >
           <div style={{ margin: 20 }}>
             <Grid container spacing={1}>
-              <Grid item xs={9} md={9} lg={9}>
+              <Grid item xs={11} md={11} lg={11}>
                 <TextField
                   Appointment
                   ID
@@ -246,7 +246,7 @@ export default function Patients() {
                   }}
                 />
               </Grid>
-              <Grid item xs={3} md={3} lg={3}>
+              <Grid item xs={1} md={1} lg={1}>
                 <Button
                   variant="contained"
                   color="primary"
