@@ -210,7 +210,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(700 + theme.spacing(2) * 2)]: {
-      width: 1700,
+      width: "auto",
       marginLeft: "auto",
       marginRight: "auto",
     },
@@ -314,6 +314,7 @@ export default function Appointments() {
         >
           <div style={{ height: 400, width: "100%" }}>
             <DataGrid
+              style={{ overflow: "auto", width: "100%" }}
               rows={rows}
               columns={columns}
               pageSize={5}

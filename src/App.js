@@ -13,6 +13,7 @@ import PhysicianView from "./PhysicianView";
 import Home from "./Home";
 import Appointments from "./Appointments";
 import Patients from "./Patients";
+import Statistic from "./Statistic";
 
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
@@ -67,6 +68,11 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+  },
+  tab: {
+    "& .MuiBox-root": {
+      padding: "0px",
+    },
   },
 }));
 
@@ -213,8 +219,16 @@ export default function App() {
           backgroundPosition: "center",
         }}
       >
-        <TabPanel value={value} index={6} style={{ minHeight: "100vh" }}>
-          <h1>Page under deployment</h1>
+        <TabPanel
+          value={value}
+          index={6}
+          style={{
+            minHeight: "100vh",
+          }}
+          sx={{ m: 1 }}
+          classes={{ root: classes.tab }}
+        >
+          <Statistic></Statistic>
         </TabPanel>
       </div>
     </div>
